@@ -15,12 +15,24 @@
     </head>
     <body>
         <label id="lblProductName" for="txtProductName">Product Name</label>
-        <input id="txtProductName" type="text"><br>
+        
+        <select>
+            <option value="BuffelloMilk">Buffello Milk</option>
+            <option value="Curd">Curd</option>
+            <option value="Ghee">Ghee</option>
+            <option value="CowMilk">Cow Milk</option>
+            <option value="RoseMILk">Rose Milk</option>
+            <option value="Panner">Panner</option>
+            <option value="butter">Butter</option>
+        </select><br>
+    
+        <label id="lblProductQuantity" for="numProductQuantity">Product Quantity</label>
+    
+        
+        <br>
         <label id ="lblProductPrice" for="numProductPrice">Product Price</label>
         <input id="numProductPrice" type="number">
-        <br>
-        <label id="lblProductQuantity" for="numProductQuantity">Product Quantity</label>
-        <input id="numProductQuantity" type="number">
+        
 
 
         <button id="btnAddProdut" onclick="addProduct()">Add product</button>
