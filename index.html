@@ -6,12 +6,17 @@
         </title>
         <script>
             function addProduct(){
-                var productName= document.getElementById("txtProductName").value;
+                var productName= document.getElementById("ddlProductName").value;
                 var productQuantity= document.getElementById("ddlProductQuantity").value;
                 var productPrice= document.getElementById("numProductPrice").value;
                 var contactNumber= document.getElementById("numContactnumber").value;
                 var location= document.getElementById("txtLocation").value;
                 alert(addProduct());
+                alert(productName());
+                alert(productQuantity());
+                alert(productPrice());
+                alert(contactNumber());
+                alert(location());
             }
         </script>
 
@@ -20,7 +25,7 @@
     <body>
 
         <label id="lblProductName" for="txtProductName">Product Name</label>       
-        <select id="txtProductName">
+        <select id="ddlProductName">
             <option value="BuffelloMilk">Buffello Milk</option>
             <option value="Curd">Curd</option>
             <option value="Ghee">Ghee</option>
@@ -28,7 +33,7 @@
             <option value="RoseMILk">Rose Milk</option>
             <option value="Panner">Panner</option>
             <option value="butter">Butter</option>
-<option value="Lassi">Lassi</option>
+            <option value="Lassi">Lassi</option>
         </select><br>
     
         <label id="lblProductQuantity" for="numProductQuantity">Product Quantity</label>  
