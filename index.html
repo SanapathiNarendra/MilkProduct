@@ -6,7 +6,11 @@
         </title>
         <script>
             function addProduct(){
-                var ProductPrice= document.getElementsById("numProductPrice").value;
+                var productName= document.getElementById("txtProductName").value;
+                var productQuantity= document.getElementById("ddlProductQuantity").value;
+                var productPrice= document.getElementById("numProductPrice").value;
+                var contactNumber= document.getElementById("numContactnumber").value;
+                var location= document.getElementById("txtLocation").value;
                 alert(addProduct());
             }
         </script>
@@ -14,8 +18,8 @@
         
     </head>
     <body>
-        <label id="lblProductName" for="txtProductName">Product Name</label>
-        
+
+        <label id="lblProductName" for="txtProductName">Product Name</label>       
         <select id="txtProductName">
             <option value="BuffelloMilk">Buffello Milk</option>
             <option value="Curd">Curd</option>
@@ -26,15 +30,15 @@
             <option value="butter">Butter</option>
         </select><br>
     
-        <label id="lblProductQuantity" for="numProductQuantity">Product Quantity</label>
-    
-        <select id="lblProductQuantity">
+        <label id="lblProductQuantity" for="numProductQuantity">Product Quantity</label>  
+        <select id="ddlProductQuantity">
             <option value="250">250ml</option>
             <option value="500">500ml</option>
             <option value="750">750ml</option>
             <option value="1000">1000ml</option>
         </select>
         <br>
+
         <label id ="lblProductPrice" for="numProductPrice">Product Price</label>
         <input id="numProductPrice" type="number">
         <br>
@@ -45,6 +49,8 @@
         <label id="lblLocation" for="txtLocation">Location</label>
         <input id="txtLocation" type="text">
         <br>
+
         <button id="btnAddProdut" onclick="addProduct()">Add product</button>
     </body>
+
 </html>
