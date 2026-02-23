@@ -5,7 +5,8 @@
     padding-left: 4px;
     padding-bottom: 5px;
     margin-bottom: 4px;
-    margin-left: ;
+    margin-left:5px ;
+    border-color: black;
 }
 .milkmenu{
    display: flex;
