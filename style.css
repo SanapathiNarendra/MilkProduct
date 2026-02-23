@@ -9,6 +9,7 @@
     border-color: black;
     justify-items: center;
     padding-right: 5px;
+    height: 100vh;
 }
 .milkmenu{
    display: flex;
