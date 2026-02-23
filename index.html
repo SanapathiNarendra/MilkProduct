@@ -6,6 +6,7 @@
         </title>
         <script>
     function addProduct(){
+
         var productName = document.getElementById("ddlProductName").value;
         var productQuantity = document.getElementById("ddlProductQuantity").value;
         var productPrice = document.getElementById("numProductPrice").value;
@@ -28,7 +29,8 @@
     </head>
     <body>
 <div>
-        <p class="ProductName">ProductName</p><label id="lblProductName" for="txtProductName">Product Name</label>       
+    <div class="milkmenu">
+        <label  class="productName" id="lblProductName" for="txtProductName">Product Name</label>       
         <select id="ddlProductName" textaligncenter="ddlProductName">
             <option value="BuffelloMilk">Buffello Milk</option>
             <option value="Curd">Curd</option>
@@ -39,7 +41,8 @@
             <option value="butter">Butter</option>
             <option value="Lassi">Lassi</option>
             <option value="ButterMilk">ButterMilk</option>
-        </select><br>
+        </select>
+        </div>
     
         <label id="lblProductQuantity" for="numProductQuantity">Product Quantity</label>  
         <select id="ddlProductQuantity">
@@ -49,18 +52,18 @@
             <option value="1000">1000ml</option>
             <option value="2L">2L</option>
         </select>
-        <br>
+        
 
         <label id ="lblProductPrice" for="numProductPrice">Product Price</label>
         <input id="numProductPrice" type="number">
-        <br>
+        
         
         <label id="lblConcactNumber" for="ContactNumber">ContactNumber</label> 
         <input id="numContactnumber" type="number">
-        <br>
+        
         <label id="lblLocation" for="txtLocation">Location</label>
         <input id="txtLocation" type="text">
-        <br>
+        
 
         <button id="btnAddProdut" onclick="addProduct()">Add product</button>
 </div>

@@ -1,3 +1,11 @@
-.ProductName{
-    background-color: blue;
+.productName{
+    display: flex;
+    background-color: rgb(200, 10, 29);
+    text-align: center;
+}
+.milkmenu{
+   display: flex;
+   background-color:blue;
+   align-items: center;
+   place-items: center;
 }
