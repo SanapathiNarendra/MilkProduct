@@ -1,5 +1,5 @@
 .productName{
-    display: flex;
+   
     background-color: rgb(200, 10, 29);
     text-align: center;
     padding-left: 4px;
@@ -18,10 +18,12 @@
    background-color:rgb(19, 234, 213);
    align-items: center;
    place-items: center;
+   padding-left: 4px;
 }
 .milkform{
     border-radius: 60px;
     margin:14px;
     padding-top:10px;
+    background-color: blueviolet;
     
 }
