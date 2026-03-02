@@ -29,3 +29,6 @@ display: flex;
     justify-items: center;
     
 }
+.productPrice{
+    display: flex;
+}
