@@ -32,4 +32,5 @@ display: flex;
 .productPrice{
     display: flex;
     border-radius: 10px;
+    border-width: 20px;
 }
