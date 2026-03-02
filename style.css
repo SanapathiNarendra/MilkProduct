@@ -26,5 +26,6 @@ display: flex;
     background-color: blueviolet;
     margin-bottom: 20px;
     padding-right: 10px;
+    justify-items: center;
     
 }
