@@ -31,4 +31,5 @@ display: flex;
 }
 .productPrice{
     display: flex;
+    border-radius: 10px;
 }
