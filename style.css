@@ -13,6 +13,7 @@ display: flex;
     color:rgb(237, 98, 193)
     margin-top:20px;
     maargin-left: 20px;
+    padding-left: 20px;
 }
 .productQuantity{
     display: flex;
