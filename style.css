@@ -65,5 +65,7 @@ display: flex;
 .contactNumber{
     display: flex;
     border-radius: 20px;
+    border-width: 20px;
+    border-left: 20px;
     
 }
