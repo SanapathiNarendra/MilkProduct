@@ -18,6 +18,7 @@ display: flex;
     bordrer-width: 20px;
     justify-items: center;
     border-width: 20px;
+    padding: auto;
 }
 .productQuantity{
     display: flex;
