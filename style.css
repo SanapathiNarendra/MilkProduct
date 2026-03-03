@@ -16,7 +16,7 @@ display: flex;
     padding-left: 20px;
     padidng-right: 20px;
     bordrer-width: 20px;
-    
+    justify-items: center;
 }
 .productQuantity{
     display: flex;
