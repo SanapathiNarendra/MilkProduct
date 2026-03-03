@@ -64,5 +64,6 @@ display: flex;
 }
 .contactNumber{
     display: flex;
-
+    border-radius: 20px;
+    
 }
