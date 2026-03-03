@@ -20,7 +20,7 @@ display: flex;
     border-width: 20px;
     padding: auto;
     padding-top: 20px;
-    
+    display: flex;
 
 }
 .productQuantity{
