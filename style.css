@@ -21,6 +21,7 @@ display: flex;
     padding: auto;
     padding-top: 20px;
     display: flex;
+    
 
 }
 .productQuantity{
@@ -60,4 +61,8 @@ display: flex;
     padding-block-end: 10px;
     background-color: blueviolet;
     
+}
+.contactNumber{
+    display: flex;
+
 }
