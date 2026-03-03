@@ -3,7 +3,7 @@
 display: flex;
 }
 .milkform{
-      background-color: #30ccf4;
+      background-color: #10beea;
     height: 50vh;
     padding: 40px;
     margin: 200px;
@@ -20,6 +20,7 @@ display: flex;
     border-width: 20px;
     padding: auto;
     padding-top: 20px;
+    
 
 }
 .productQuantity{
