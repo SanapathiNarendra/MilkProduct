@@ -1,6 +1,7 @@
 .productName{
 
 display: flex;
+border-radius: 10px;
 }
 .milkform{
       background-color: #10beea;
