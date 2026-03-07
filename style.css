@@ -29,8 +29,6 @@ border-width: 30px;
     border-width: 30px;
     padding-top:30px;
     display: flex;
-    
-
 }
 .productQuantity{
     display: flex;
@@ -38,7 +36,7 @@ border-width: 30px;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-right: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
     color: rgb(4, 255, 34);
     padding-block-end: 10px;
     background-color: rgb(49, 234, 129);
