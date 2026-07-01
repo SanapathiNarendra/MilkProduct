@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dairy Sales Milk & Curd</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+h2{
+    text-align:center;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#0b7dda;
+    color:white;
+}
+
+input{
+    width:90%;
+    padding:5px;
+    text-align:center;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    background:#28a745;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#218838;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Daily Sales Milk & Curd</h2>
+
+<table id="salesTable">
+    <tr>
+        <th>Date</th>
+        <th>Agadalanka Sales (₹)</th>
+        <th>Gundugolanu Morning Sales (₹)</th>
+        <th>Gundugolanu Evening Sales (₹)</th>
+        <th>Total Sales (₹)</th>
+    </tr>
+
+    <tr>
+        <td><input type="date"></td>
+
+        <td>
+            <input type="number" class="sale" oninput="calculateTotal(this)">
+        </td>
+
+        <td>
+            <input type="number" class="sale" oninput="calculateTotal(this)">
+        </td>
+
+        <td>
+            <input type="number" class="sale" oninput="calculateTotal(this)">
+        </td>
+
+        <td>
+            <input type="text" readonly>
+        </td>
+    </tr>
+
+</table>
+
+<button onclick="addRow()">Add New Day</button>
+
+<script>
+
+function calculateTotal(element){
+
+    let row = element.parentElement.parentElement;
+
+    let inputs = row.querySelectorAll(".sale");
+
+    let total = 0;
+
+    inputs.forEach(function(input){
+        total += Number(input.value) || 0;
+    });
+
+    row.cells[4].children[0].value = total;
+}
+
+function addRow(){
+
+    let table = document.getElementById("salesTable");
+
+    let row = table.insertRow();
+
+    row.innerHTML = `
+        <td><input type="date"></td>
+        <td><input type="number" class="sale" oninput="calculateTotal(this)"></td>
+        <td><input type="number" class="sale" oninput="calculateTotal(this)"></td>
+        <td><input type="number" class="sale" oninput="calculateTotal(this)"></td>
+        <td><input type="text" readonly></td>
+    `;
+}
+
+</script>
+
+</body>
+</html>
